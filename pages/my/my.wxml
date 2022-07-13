@@ -1,0 +1,26 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+    <view class="userinfo-avatar-box">
+        <block>
+            <image wx:if="isShowUserInfo" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <view class="userinfo-avatar" wx:else></view>
+            <view class="nickName-arrow" wx:if="{{isShowUserInfo}}">
+                <view class="nickName-box">
+                    <text>{{userInfo.nickName}}</text>
+                    <text class="">个性签名...</text>
+                </view>
+                <image class="arrow" src="../../images/my/right.png"></image>
+            </view>
+            <view class="nickName-arrow" wx:else bindtap="getUserProfile">
+                立即登录 </view>
+        </block>
+    </view>
+    <view class="official-box">
+        <image class="logo" src="../../images/my/logo.png"></image>
+        <view class="more">
+            <text>更多精彩</text>
+            <text>关注公众号</text>
+        </view>
+        <image class="toFollow" src="../../images/my/toFollow.png"></image>
+    </view>
+</view>

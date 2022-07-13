@@ -1,0 +1,95 @@
+/* pages/my/my.wxss */
+
+.userinfo-avatar-box {
+    height: 300rpx;
+    background-color: #535063;
+    display: flex;
+    align-items: center;
+    padding: 0 74rpx;
+    color: white;
+    justify-content: space-between;
+}
+
+.userinfo-avatar {
+    width: 138rpx;
+    height: 138rpx;
+    border-radius: 50%;
+    background-color: #F6F7FB;
+}
+
+.nickName-arrow {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 44rpx;
+    height:  138rpx;
+}
+
+.nickName-box {
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+}
+.nickName-box text:first-child {
+    font-size: 40rpx;
+}
+.nickName-box text:last-child {
+    font-size: 28rpx;
+    margin-top: 20rpx;
+}
+
+.arrow {
+    width: 12rpx;
+    height: 28rpx;
+}
+
+.userinfo-nickname-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200rpx;
+}
+
+.userinfo-nickname {
+    margin-bottom: 40rpx;
+}
+
+.official-box {
+    width: 604rpx;
+    height: 160rpx;
+    border: 1rpx solid #dcdbdb;
+    position: absolute;
+    bottom: 126rpx;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50rpx;
+    box-shadow: 0 0 12rpx #c8c8c8
+}
+
+.official-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 44rpx;
+}
+
+.official-box .logo {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.official-box .more {
+    font-size: 26rpx;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    line-height: 55rpx;
+    margin-left: 10rpx;
+}
+
+.official-box .toFollow {
+    width: 138rpx;
+    height: 60rpx;
+}
